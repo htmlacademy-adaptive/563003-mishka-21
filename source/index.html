@@ -13,9 +13,8 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list main-nav__list--site">
+          <li class="main-nav__item">
             <a href="#">
               Каталог товаров
             </a>
@@ -26,28 +25,26 @@
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__search" href="#">
-              <img class="user-list__search-icon"></img>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item">
+            <a class="main-nav__search" href="#">
+              <img class="main-nav__img--search"></img>
               Поиск по сайту
             </a>
           </li>
-          <li class="user-list__item">
-            <a class="user-list__basket" href="#">
-              <img class="user-list__basket-icon"></img>
+          <li class="main-nav__item">
+            <a class="main-nav__basket" href="#">
+              <img class="main-nav__img--basket"></img>
               Корзина: пока пуста
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Интеренет магазин Мишка</h1>
     <section class="offer">
       <h2 class="visually-hidden">Предложения магазина по разделам</h2>
-      <div class="offer__wrapper">
         <div class="offer__header">
           <p class="offer-info info">
             Бесплатная доставка по России
@@ -70,11 +67,9 @@
             </a>
           </li>
         </ul>
-      </div>
     </section>
     <section class="bestseller">
       <h2 class="visually-hidden">Топовый товар</h2>
-      <div class="bestseller__wrapper">
         <p>
           Вязаные корзинки
         </p>
@@ -102,11 +97,9 @@
         <img class="bestseller__img" src="#" alt="Три вязанных корзинки">
         <p class="bestseller__price">Цена: 990 руб.</p>
         <a class="bestseller__button" href="#">Заказать</a>
-      </div>
     </section>
     <section class="about">
       <h2 class="visually-hidden">Информация о нас</h2>
-      <div class="about__wrapper">
         <p class="about__title">Коротко о нас:</p>
         <ul class="about__list">
           <li class="about__item">
@@ -134,11 +127,9 @@
             в подарочной упаковке
           </li>
         </ul>
-      </div>
     </section>
     <section сlass="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
-      <div class="reviews__wrapper">
         <p class="reviews__title">Отзывы:</p>
         <a class="reviews__button reviews__button--top" href="#">Написать</a>
         <blockquote class="reviews__item">
@@ -155,7 +146,6 @@
           <button class="reviews__next"></button>
         </div>
         <a class="button reviews__button reviews__button--bottom" href="#">Написать</a>
-      </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
@@ -176,17 +166,14 @@
             д. 19/8, офис 101</address>
         </li>
       </ul>
-      <div class="contacts__wrapper">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2sua!4v1605314190269!5m2!1suk!2sua"
           width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
           tabindex="0"></iframe>
         <a class="contacts__button" href="#">Напишите нам</a>
-      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
         <img src="#" alt="Логотип интернет магазина Мишка">
       </a>
@@ -205,7 +192,6 @@
         <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="#" target="_blank">HTML Academy</a>
       </div>
-    </div>
   </footer>
 </body>
 
