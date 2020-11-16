@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Форма Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интеренет магазина Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list main-nav__list--site">
+        <li class="main-nav__item">
+          <a href="#">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Вязание на заказ
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__list main-nav__list--user">
+        <li class="main-nav__item">
+          <a class="main-nav__search" href="#">
+            <img class="main-nav__img--search"></img>
+            Поиск по сайту
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__basket" href="#">
+            <img class="main-nav__img--basket"></img>
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Форма интеренет магазина Мишка</h1>
+    <section class="form-caption">
+      <h2 class="visually-hidden">Предложения магазина Вязание на заказ</h2>
+      <div class="form-caption__header">
+        <p class="form-caption__info info">
+          Бесплатная доставка по России
+        </p>
+        <p class="form-caption__intro intro">
+          Вязание на заказ
+        </p>
+      </div>
+      <p class="form-caption__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа
+        и мы свяжемся с вами, чтобы
+        уточнить детали.</p>
+    </section>
+    <section class="filters">
+      <h2 class="visually-hidden">Форма для заказа</h2>
+      <form class="filters__form" action="#" method="POST">
+        <fieldset class="filters__list">
+          <legend class="filters__caption">Тип</legend>
+          <input class="filters__input visually-hidden" name="interior" type="radio" value="interior"
+            id="filter-interior" checked><label class="filters__label filters__label--interior"
+            for="filter-interior">Аксесуар для интерьера</label>
+          <input class="filters__input visually-hidden" name="toy" type="radio" value="toy" id="filter-toy"><label
+            class="filters__label filters__label--toy" for="filter-toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="filters__list">
+          <legend class="filters__caption">Цвет</legend>
+          <input class="filters__input visually-hidden" name="color" type="checkbox" value="white" id="filter-color"
+            checked><label class="filters__label filters__label--color" for="filter-color">Белый></label>
+          <input class="filters__input visually-hidden" name="color" type="checkbox" value="gray" id="filter-color"
+            checked><label class="filters__label filters__label--color" for="filter-color">Серый</label>
+          <input class="filters__input visually-hidden" name="color" type="checkbox" value="tiffany" id="filter-color">
+          <label class="filters__label filters__label--color" for="filter-color">&laquo;Тиффани&raquo;</label>
+          <input class="filters__input visually-hidden" name="color" type="checkbox" value="black" id="filter-color">
+          <label class="filters__label filters__label--color" for="filter-color">Черный</label>
+          <input class="filters__input visually-hidden" name="color" type="checkbox" value="pink" id="filter-color">
+          <label class="filters__label filters__label--color" for="filter-color">Розовый</label>
+          <input class="filters__input visually-hidden" name="color" type="checkbox" value="orange" id="filter-color">
+          <label class="filters__label filters__label--color" for="filter-color">Оранжевый</label>
+        </fieldset>
+        <fieldset class="filters__list">
+          <legend class="filters__caption">Фио</legend>
+          <input class="filters__input visually-hidden" name="name" type="text" value="name" id="filter-name"
+            placeholder="Введите ваше имя<sup>*</sup>"><label class="filters__label" for="filter-name">Имя:</label>
+          <input class="filters__input visually-hidden" name="surname" type="text" value="surname" id="filter-surname"
+            placeholder="Укажите фамилию<sup>*</sup>"><label class="filters__label"
+            for="filter-patronymic">Фамилия:</label>
+          <input class="filters__input visually-hidden" name="patronymic" type="text" value="patronymic"
+            id="filter-patronymic" placeholder="Отчество, если желаете<sup>*</sup>"><label class="filters__label"
+            for="filter-patronymic">Отчество:</label>
+        </fieldset>
+        <fieldset class="filters__list">
+          <legend class="filters__caption">Тел</legend>
+          <input class="filters__input visually-hidden" name="name" type="tel" value="name" id="filter-name"
+            placeholder="+7 XXX XXX XX XX<sup>*</sup>"><label class="filters__label" for="filter-name">Имя:</label>
+        </fieldset>
+        <fieldset class="filters__list">
+          <legend class="filters__caption">Е-mail</legend>
+          <input class="filters__input visually-hidden" name="name" type="email" value="name" id="filter-name"
+            placeholder="Ваш Email<sup>*</sup>"><label class="filters__label" for="filter-name">Имя:</label>
+        </fieldset>
+        <fieldset class="filters__list">
+          <legend class="filters__caption">Доп</legend>
+          <textarea class="filters__input visually-hidden" name="text" type="text" id="filter-name"
+            placeholder="Опишите ваши пожелания к заказу"></textarea><label class="filters__label visually-hidden"
+            for="filter-text">Текстовая область</label>
+        </fieldset>
+        <p class="filters__info"><sup>*</sup>Поля обяательны для заполнения</p>
+        <button class="filters__button" type="submit">Отправить заказ</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="#">
+      <img src="#" alt="Логотип интернет магазина Мишка">
+    </a>
+    <ul class="social__list social">
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#" target="_blank">Мы в Инстаграме</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" target="_blank">Мы в Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" target="_blank">Мы в Твиттере</a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="#" target="_blank">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
+</html>
